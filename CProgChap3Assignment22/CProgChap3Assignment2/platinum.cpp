@@ -1,7 +1,7 @@
 /*
-	200845388 È«Á¤¹Î assignment
+	200845388 í™ì •ë¯¼ assignment
 	Problem 6
-		The mass of a single molecule of water is about 3.0¡¿10 -23 grams. A quart of water is
+		The mass of a single molecule of water is about 3.0Â¡Â¿10 -23 grams. A quart of water is
 		about 950 grams. Write a program that requests an amount of water, in quarts, and
 		displays the number of water molecules in that amount.
 */ 
@@ -25,10 +25,10 @@ int main(void)
 }
 
 void function(float quarts) // start of function definition
-	{
-		float num_mole = 0.0f;  // water equivalent
+{
+	float num_mole = 0.0f;  // water equivalent
 
-		num_mole = (950.0f*quarts)/(3.0f);
-		printf("\nthe number of water molecules = %.1f*10^23 ea\n\n", num_mole);
-		system("pause");
-	}
+	num_mole = (950.0f*quarts)/(3.0f);
+	printf("\nthe number of water molecules = %.1f*10^23 ea\n\n", num_mole);
+	system("pause");
+}
