@@ -1,34 +1,34 @@
+/*
+	200845388 홍정민 assignment
+	Problem 6
+		The mass of a single molecule of water is about 3.0×10 -23 grams. A quart of water is
+		about 950 grams. Write a program that requests an amount of water, in quarts, and
+		displays the number of water molecules in that amount.
+*/ 
+
 #include <stdio.h>
 #include <stdlib.h>
-void function(void);
 
+void function(float);
 /* ANSI/ISO C function prototyping */
+
 int main(void) 
 {
-	float weight;    /* user weight             */
-
-	printf("Are you worth your weight in platinum?\n");
-	printf("Let's check it out.\n");
-	printf("Please enter your weight in pounds: ");/*get input from the user  */
-	scanf("%f", &weight);      /* assume platinum is $1700 per ounce          */
-							   /* 14.5833 converts pounds  */
-	printf("I will summon the butler function.\n");
-	function(weight);
-	printf("Yes. Bring me some tea and writeable DVDs.\n");
+	float quarts=0.0f; //water quarts
+	
+	printf("Please enter water weight in quarts: ");//get input from the user
+	scanf("%f", &quarts);
+	printf("\nI will summon the function calculating the number of water molecules from your input data.\n");
+	function(quarts);
 	getchar();
 	return 0;
 }
 
-void function(float weight)       /* start of function definition */
+void function(float quarts) // start of function definition
 	{
-		float value;     /* platinum equivalent     */
+		float num_mole = 0.0f;  // water equivalent
 
-		value = 1700.0 * weight * 14.5833;
-		printf("weight = %f\n", weight);
-		//여기에 코딩하는 것이 필요함
-		printf("Your weight in platinum is worth $%.2f.\n", value); // 소숫점 두자리 출력
-		printf("You are easily worth that! If platinum prices drop,\n");
-		printf("eat more to maintain your value.\n");
+		num_mole = (950.0f*quarts)/(3.0f);
+		printf("\nthe number of water molecules = %.1f*10^23 ea\n\n", num_mole);
 		system("pause");
-		return 0;
 	}
