@@ -26,9 +26,9 @@ int main(void)
 
 void function(float quarts) // start of function definition
 	{
-		float num_mole = 0.0f;  // water equivalent
+		double num_mole = 0.0;  // water equivalent
 
-		num_mole = (950.0f*quarts)/(3.0f);
-		printf("\nthe number of water molecules = %.1f*10^23 ea\n\n", num_mole);
+		num_mole = (950.0*quarts)/(3.0*0.000000000000000000000001);
+		printf("\nthe number of water molecules = %.e ea\n\n", num_mole);
 		system("pause");
 	}
